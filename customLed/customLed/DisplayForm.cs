@@ -20,11 +20,11 @@ namespace customLed
         public static string text2 = "";
         public static string text3 = "";
         public static int setTextSize = 50;
-       
+
         public static ColorDialog cdLedOnColorDlg = new ColorDialog();
         public static ColorDialog cdLedOffColorDlg = new ColorDialog();
 
-        
+
 
 
 
@@ -33,32 +33,31 @@ namespace customLed
         {
 
             InitializeComponent();
-            str_scroll_text1.Visible = false;
-
 
             loadFont();
-         //   AllocFont(font, this.str_scroll_text, 16);
+            //   AllocFont(font, this.str_scroll_text, 16);
 
-            AllocFont(font, this.str_scroll_text1, 16);
-            AllocFont(font, this.str_scroll_text2, 16);
-         //   AllocFont(font, this.label14, 26);
-            AllocFont(font, this.label15, setTextSize);
-            AllocFont(font, this.label16, setTextSize);
+            AllocFont(font, this.kannada_textBox1, 16);
+            AllocFont(font, this.kannada_textBox2, 16);
+            //   AllocFont(font, this.label14, 26);
+            AllocFont(font, this.kannada_label, setTextSize);
+            AllocFont(font, this.kannada_label1, setTextSize);
+
+            eng_textBox1.Font = new Font("Arial", 16, FontStyle.Regular);
+            eng_textBox2.Font = new Font("Arial", 16, FontStyle.Regular);
+
+            eng_textBox1.Visible = false;
+            eng_textBox2.Visible = false;
+
+            eng_label.Visible = false;
+            eng_label1.Visible = false;
 
             label14.Text = str_scroll_text.Text;
-            label15.Text = str_scroll_text1.Text;
-            label16.Text = str_scroll_text2.Text;
+            kannada_label.Text = kannada_textBox1.Text;
+            kannada_label1.Text = kannada_textBox2.Text;
 
 
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
-            this.MaximizeBox = false;
-
-
-           
-            label14.Text = str_scroll_text.Text;
-            
-
-
 
         }
 
@@ -96,23 +95,23 @@ namespace customLed
         {
             this.Refresh();
 
-         //   label15.Left += 10;
-            label16.Left += 10;
+            //   label15.Left += 10;
+            kannada_label1.Left += 10;
 
-            if (label15.Width > (this.Width - label14.Width))
+            if (kannada_label.Width > (this.Width - label14.Width))
             {
-                label15.Left += 10;
-                if (label15.Left >= this.Width)
+                kannada_label.Left += 10;
+                if (kannada_label.Left >= this.Width)
                 {
-                    label15.Left = (label15.Width - label14.Width) * -1;
+                    kannada_label.Left = (kannada_label.Width - label14.Width) * -1;
                 }
                 //Graphics gra = this.CreateGraphics();
                 //gra.CompositingQuality = System.Drawing.Drawing2D.CompositingQuality.HighQuality;
                 //gra.
             }
-            if (label16.Left >= this.Width)
+            if (kannada_label1.Left >= this.Width)
             {
-                label16.Left = (label16.Width - label14.Width) * -1;
+                kannada_label1.Left = (kannada_label1.Width - label14.Width) * -1;
             }
 
         }
@@ -125,20 +124,96 @@ namespace customLed
 
         private void str_scroll_text1_TextChanged(object sender, EventArgs e)
         {
-            label15.Text = str_scroll_text1.Text;
+            kannada_label.Text = kannada_textBox1.Text;
         }
 
         private void text_size_numericUpDown_ValueChanged(object sender, EventArgs e)
         {
             setTextSize = (int)text_size_numericUpDown.Value;
-            label15.Font = new Font("Microsoft Sans Serif", (int)text_size_numericUpDown.Value, FontStyle.Regular);
-            label16.Font = new Font("Microsoft Sans Serif", (int)text_size_numericUpDown.Value, FontStyle.Regular);
+            kannada_label.Font = new Font("Microsoft Sans Serif", setTextSize, FontStyle.Regular);
+            kannada_label1.Font = new Font("Microsoft Sans Serif", setTextSize, FontStyle.Regular);
+            eng_label.Font = new Font("Microsoft Sans Serif", setTextSize, FontStyle.Regular);
+            eng_label1.Font = new Font("Microsoft Sans Serif", setTextSize, FontStyle.Regular);
         }
 
 
         private void refresh_Click(object sender, EventArgs e)
         {
             this.ParentForm.Refresh();
+        }
+        
+        private void lang_combo_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            if (lang_combo.SelectedIndex == 0)
+            {
+                eng_textBox1.Visible = true;
+                eng_textBox2.Visible = true;
+                eng_label.Visible = true;
+                eng_label1.Visible = true;
+                kannada_label.Visible = false;
+                kannada_label1.Visible = false;
+                kannada_textBox1.Visible = false;
+                kannada_textBox2.Visible = false;
+                eng_label.Text = eng_textBox1.Text;
+                eng_label1.Text = eng_textBox2.Text;
+                timer2.Start();
+            }
+
+            else
+            {
+                eng_textBox1.Visible = false;
+                eng_textBox2.Visible = false;
+                eng_label.Visible = false;
+                eng_label1.Visible = false;
+                kannada_label.Visible = true;
+                kannada_label1.Visible = true;
+                kannada_textBox1.Visible = true;
+                kannada_textBox2.Visible = true;
+                kannada_label.Text = kannada_textBox1.Text;
+                kannada_label1.Text = kannada_textBox2.Text;
+
+
+
+            }
+        }
+
+        private void kannada_textBox2_TextChanged(object sender, EventArgs e)
+        {
+            kannada_label1.Text = kannada_textBox2.Text;
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            this.Refresh();
+
+            //   label15.Left += 10;
+            eng_label1.Left += 10;
+
+            if (eng_label.Width > (this.Width - label14.Width))
+            {
+                eng_label.Left += 10;
+                if (eng_label.Left >= this.Width)
+                {
+                    eng_label.Left = (eng_label.Width - label14.Width) * -1;
+                }
+                //Graphics gra = this.CreateGraphics();
+                //gra.CompositingQuality = System.Drawing.Drawing2D.CompositingQuality.HighQuality;
+                //gra.
+            }
+            if (eng_label1.Left >= this.Width)
+            {
+                eng_label1.Left = (eng_label1.Width - label14.Width) * -1;
+            }
+        }
+
+        private void eng_textBox1_TextChanged_1(object sender, EventArgs e)
+        {
+            eng_label.Text = eng_textBox1.Text;
+        }
+
+        private void eng_textBox2_TextChanged_1(object sender, EventArgs e)
+        {
+            eng_label1.Text = eng_textBox2.Text;
         }
     }
 }

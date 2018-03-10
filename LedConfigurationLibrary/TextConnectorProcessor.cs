@@ -31,6 +31,7 @@ namespace LedConfigurationLibrary.TextHelpers
             foreach (SettingsModel s in models)
             {
 
+                post_text.Add($"{s.Font}");
                 post_text.Add($"{s.FontTypeSwap}");
                 post_text.Add($"{s.RGBforeground}");
                 post_text.Add($"{s.RGBbackground}");
