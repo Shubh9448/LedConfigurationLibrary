@@ -32,12 +32,12 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DisplayForm));
-            this.label14 = new System.Windows.Forms.Label();
+            this.busNum_label = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.eng_label1 = new System.Windows.Forms.Label();
-            this.eng_label = new System.Windows.Forms.Label();
             this.kannada_label1 = new System.Windows.Forms.Label();
             this.kannada_label = new System.Windows.Forms.Label();
+            this.eng_label1 = new System.Windows.Forms.Label();
+            this.eng_label = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.scrollbutton = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -52,12 +52,17 @@
             this.kannada_textBox2 = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.clrButton = new System.Windows.Forms.Button();
+            this.fontType_label = new System.Windows.Forms.Label();
+            this.fontType_Combo = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.lang_combo = new System.Windows.Forms.ComboBox();
             this.refresh = new System.Windows.Forms.Button();
             this.text_size_numericUpDown = new System.Windows.Forms.NumericUpDown();
             this.label2 = new System.Windows.Forms.Label();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.customLedControl1 = new customLed.CustomLedControl();
             this.panel2.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -66,43 +71,29 @@
             ((System.ComponentModel.ISupportInitialize)(this.text_size_numericUpDown)).BeginInit();
             this.SuspendLayout();
             // 
-            // label14
+            // busNum_label
             // 
-            resources.ApplyResources(this.label14, "label14");
-            this.label14.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label14.Name = "label14";
+            resources.ApplyResources(this.busNum_label, "busNum_label");
+            this.busNum_label.BackColor = System.Drawing.Color.Transparent;
+            this.busNum_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.busNum_label.Name = "busNum_label";
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.label14);
+            this.panel2.BackColor = System.Drawing.Color.Black;
             this.panel2.Controls.Add(this.kannada_label1);
-            this.panel2.Controls.Add(this.kannada_label);
             this.panel2.Controls.Add(this.eng_label1);
+            this.panel2.Controls.Add(this.busNum_label);
             this.panel2.Controls.Add(this.eng_label);
+            this.panel2.Controls.Add(this.kannada_label);
+            this.panel2.Controls.Add(this.customLedControl1);
             resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Name = "panel2";
-            // 
-            // eng_label1
-            // 
-            resources.ApplyResources(this.eng_label1, "eng_label1");
-            this.eng_label1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.eng_label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.eng_label1.Name = "eng_label1";
-            this.eng_label1.UseCompatibleTextRendering = true;
-            // 
-            // eng_label
-            // 
-            resources.ApplyResources(this.eng_label, "eng_label");
-            this.eng_label.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.eng_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.eng_label.Name = "eng_label";
-            this.eng_label.UseCompatibleTextRendering = true;
             // 
             // kannada_label1
             // 
             resources.ApplyResources(this.kannada_label1, "kannada_label1");
-            this.kannada_label1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.kannada_label1.BackColor = System.Drawing.Color.Transparent;
             this.kannada_label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.kannada_label1.Name = "kannada_label1";
             this.kannada_label1.UseCompatibleTextRendering = true;
@@ -110,10 +101,26 @@
             // kannada_label
             // 
             resources.ApplyResources(this.kannada_label, "kannada_label");
-            this.kannada_label.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.kannada_label.BackColor = System.Drawing.Color.Transparent;
             this.kannada_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.kannada_label.Name = "kannada_label";
             this.kannada_label.UseCompatibleTextRendering = true;
+            // 
+            // eng_label1
+            // 
+            resources.ApplyResources(this.eng_label1, "eng_label1");
+            this.eng_label1.BackColor = System.Drawing.Color.Transparent;
+            this.eng_label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.eng_label1.Name = "eng_label1";
+            this.eng_label1.UseCompatibleTextRendering = true;
+            // 
+            // eng_label
+            // 
+            resources.ApplyResources(this.eng_label, "eng_label");
+            this.eng_label.BackColor = System.Drawing.Color.Transparent;
+            this.eng_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.eng_label.Name = "eng_label";
+            this.eng_label.UseCompatibleTextRendering = true;
             // 
             // timer1
             // 
@@ -207,6 +214,10 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.clrButton);
+            this.panel1.Controls.Add(this.fontType_label);
+            this.panel1.Controls.Add(this.fontType_Combo);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.lang_combo);
             this.panel1.Controls.Add(this.refresh);
@@ -218,6 +229,31 @@
             this.panel1.Controls.Add(this.scrollbutton);
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
+            // 
+            // label4
+            // 
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.Name = "label4";
+            // 
+            // clrButton
+            // 
+            resources.ApplyResources(this.clrButton, "clrButton");
+            this.clrButton.Name = "clrButton";
+            this.clrButton.UseVisualStyleBackColor = true;
+            this.clrButton.Click += new System.EventHandler(this.clrButton_Click);
+            // 
+            // fontType_label
+            // 
+            resources.ApplyResources(this.fontType_label, "fontType_label");
+            this.fontType_label.Name = "fontType_label";
+            // 
+            // fontType_Combo
+            // 
+            this.fontType_Combo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.fontType_Combo.FormattingEnabled = true;
+            resources.ApplyResources(this.fontType_Combo, "fontType_Combo");
+            this.fontType_Combo.Name = "fontType_Combo";
+            this.fontType_Combo.SelectedIndexChanged += new System.EventHandler(this.fontType_Combo_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -263,6 +299,15 @@
             this.timer2.Interval = 1;
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
+            // customLedControl1
+            // 
+            this.customLedControl1.LedOffColor = System.Drawing.Color.DarkGray;
+            this.customLedControl1.LedOnColor = System.Drawing.Color.Red;
+            resources.ApplyResources(this.customLedControl1, "customLedControl1");
+            this.customLedControl1.Name = "customLedControl1";
+            this.customLedControl1.NbLedRows = 80;
+            this.customLedControl1.SizeCoeff = 0.67D;
+            // 
             // DisplayForm
             // 
             resources.ApplyResources(this, "$this");
@@ -288,7 +333,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label busNum_label;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label kannada_label;
         private System.Windows.Forms.Timer timer1;
@@ -314,6 +359,11 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox lang_combo;
         private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.Label fontType_label;
+        private System.Windows.Forms.ComboBox fontType_Combo;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button clrButton;
+        private CustomLedControl customLedControl1;
     }
 }
 
