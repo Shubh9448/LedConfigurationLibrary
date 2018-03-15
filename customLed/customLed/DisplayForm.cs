@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Drawing.Text;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
@@ -25,6 +26,8 @@ namespace customLed
         public static ColorDialog cdLedOnColorDlg = new ColorDialog();
         public static ColorDialog cdLedOffColorDlg = new ColorDialog();
 
+        public static SolidBrush brush;
+
 
 
 
@@ -35,6 +38,7 @@ namespace customLed
         {
 
             InitializeComponent();
+
 
             loadFont();
             //   AllocFont(font, this.str_scroll_text, 16);
@@ -271,5 +275,26 @@ namespace customLed
                 kannada_label1.ForeColor = cdLedOffColorDlg.Color;
             }
         }
+
+        private void ledDisplay_panel_Paint(object sender, PaintEventArgs e)
+        {
+            Graphics gfx = e.Graphics;
+            brush = new SolidBrush(Color.Black);
+
+            // Calling the base class OnPaint
+            base.OnPaint(e);
+
+            // Antialiasing
+            gfx.SmoothingMode = SmoothingMode.AntiAlias;
+
+            for (int i = 3; i < ledDisplay_panel.Height; i += 8)
+            {
+                for (int j = 3; j < ledDisplay_panel.Width; j += 8)
+                {
+                    gfx.FillPie(brush, j, i, 4, 4, 0, 360);
+                }
+            }
+        }
+        
     }
 }

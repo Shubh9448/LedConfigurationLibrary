@@ -33,11 +33,11 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DisplayForm));
             this.busNum_label = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.kannada_label1 = new System.Windows.Forms.Label();
-            this.kannada_label = new System.Windows.Forms.Label();
+            this.ledDisplay_panel = new System.Windows.Forms.Panel();
             this.eng_label1 = new System.Windows.Forms.Label();
+            this.kannada_label = new System.Windows.Forms.Label();
             this.eng_label = new System.Windows.Forms.Label();
+            this.kannada_label1 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.scrollbutton = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -62,8 +62,7 @@
             this.text_size_numericUpDown = new System.Windows.Forms.NumericUpDown();
             this.label2 = new System.Windows.Forms.Label();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
-            this.customLedControl1 = new customLed.CustomLedControl();
-            this.panel2.SuspendLayout();
+            this.ledDisplay_panel.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -78,33 +77,17 @@
             this.busNum_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.busNum_label.Name = "busNum_label";
             // 
-            // panel2
+            // ledDisplay_panel
             // 
-            this.panel2.BackColor = System.Drawing.Color.Black;
-            this.panel2.Controls.Add(this.kannada_label1);
-            this.panel2.Controls.Add(this.eng_label1);
-            this.panel2.Controls.Add(this.busNum_label);
-            this.panel2.Controls.Add(this.eng_label);
-            this.panel2.Controls.Add(this.kannada_label);
-            this.panel2.Controls.Add(this.customLedControl1);
-            resources.ApplyResources(this.panel2, "panel2");
-            this.panel2.Name = "panel2";
-            // 
-            // kannada_label1
-            // 
-            resources.ApplyResources(this.kannada_label1, "kannada_label1");
-            this.kannada_label1.BackColor = System.Drawing.Color.Transparent;
-            this.kannada_label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.kannada_label1.Name = "kannada_label1";
-            this.kannada_label1.UseCompatibleTextRendering = true;
-            // 
-            // kannada_label
-            // 
-            resources.ApplyResources(this.kannada_label, "kannada_label");
-            this.kannada_label.BackColor = System.Drawing.Color.Transparent;
-            this.kannada_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.kannada_label.Name = "kannada_label";
-            this.kannada_label.UseCompatibleTextRendering = true;
+            this.ledDisplay_panel.BackColor = System.Drawing.Color.White;
+            this.ledDisplay_panel.Controls.Add(this.busNum_label);
+            this.ledDisplay_panel.Controls.Add(this.eng_label1);
+            this.ledDisplay_panel.Controls.Add(this.kannada_label);
+            this.ledDisplay_panel.Controls.Add(this.eng_label);
+            this.ledDisplay_panel.Controls.Add(this.kannada_label1);
+            resources.ApplyResources(this.ledDisplay_panel, "ledDisplay_panel");
+            this.ledDisplay_panel.Name = "ledDisplay_panel";
+            this.ledDisplay_panel.Paint += new System.Windows.Forms.PaintEventHandler(this.ledDisplay_panel_Paint);
             // 
             // eng_label1
             // 
@@ -114,6 +97,14 @@
             this.eng_label1.Name = "eng_label1";
             this.eng_label1.UseCompatibleTextRendering = true;
             // 
+            // kannada_label
+            // 
+            resources.ApplyResources(this.kannada_label, "kannada_label");
+            this.kannada_label.BackColor = System.Drawing.Color.Transparent;
+            this.kannada_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.kannada_label.Name = "kannada_label";
+            this.kannada_label.UseCompatibleTextRendering = true;
+            // 
             // eng_label
             // 
             resources.ApplyResources(this.eng_label, "eng_label");
@@ -121,6 +112,14 @@
             this.eng_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.eng_label.Name = "eng_label";
             this.eng_label.UseCompatibleTextRendering = true;
+            // 
+            // kannada_label1
+            // 
+            resources.ApplyResources(this.kannada_label1, "kannada_label1");
+            this.kannada_label1.BackColor = System.Drawing.Color.Transparent;
+            this.kannada_label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.kannada_label1.Name = "kannada_label1";
+            this.kannada_label1.UseCompatibleTextRendering = true;
             // 
             // timer1
             // 
@@ -299,26 +298,17 @@
             this.timer2.Interval = 1;
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
-            // customLedControl1
-            // 
-            this.customLedControl1.LedOffColor = System.Drawing.Color.DarkGray;
-            this.customLedControl1.LedOnColor = System.Drawing.Color.Red;
-            resources.ApplyResources(this.customLedControl1, "customLedControl1");
-            this.customLedControl1.Name = "customLedControl1";
-            this.customLedControl1.NbLedRows = 80;
-            this.customLedControl1.SizeCoeff = 0.67D;
-            // 
             // DisplayForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.ledDisplay_panel);
             this.Controls.Add(this.panel1);
             this.MaximizeBox = false;
             this.Name = "DisplayForm";
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.ledDisplay_panel.ResumeLayout(false);
+            this.ledDisplay_panel.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
@@ -334,7 +324,7 @@
 
         #endregion
         private System.Windows.Forms.Label busNum_label;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel ledDisplay_panel;
         private System.Windows.Forms.Label kannada_label;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label kannada_label1;

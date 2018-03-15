@@ -130,7 +130,7 @@
     <value>NoControl</value>
   </data>
   <data name="busNum_label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-1, 9</value>
+    <value>-1, -1</value>
   </data>
   <data name="busNum_label.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>8, 0, 8, 0</value>
@@ -160,48 +160,9 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;busNum_label.Parent" xml:space="preserve">
-    <value>panel2</value>
+    <value>ledDisplay_panel</value>
   </data>
   <data name="&gt;&gt;busNum_label.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="kannada_label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="kannada_label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 50.25pt</value>
-  </data>
-  <data name="kannada_label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="kannada_label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>204, 97</value>
-  </data>
-  <data name="kannada_label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="kannada_label1.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>150000000, 0</value>
-  </data>
-  <data name="kannada_label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>246, 88</value>
-  </data>
-  <data name="kannada_label1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="kannada_label1.Text" xml:space="preserve">
-    <value>label16</value>
-  </data>
-  <data name="&gt;&gt;kannada_label1.Name" xml:space="preserve">
-    <value>kannada_label1</value>
-  </data>
-  <data name="&gt;&gt;kannada_label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;kannada_label1.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;kannada_label1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="eng_label1.AutoSize" type="System.Boolean, mscorlib">
@@ -214,7 +175,7 @@
     <value>NoControl</value>
   </data>
   <data name="eng_label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>202, 97</value>
+    <value>213, 96</value>
   </data>
   <data name="eng_label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -238,49 +199,10 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;eng_label1.Parent" xml:space="preserve">
-    <value>panel2</value>
+    <value>ledDisplay_panel</value>
   </data>
   <data name="&gt;&gt;eng_label1.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="eng_label.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="eng_label.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 49.8000031pt</value>
-  </data>
-  <data name="eng_label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="eng_label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>204, 10</value>
-  </data>
-  <data name="eng_label.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="eng_label.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>150000000, 0</value>
-  </data>
-  <data name="eng_label.Size" type="System.Drawing.Size, System.Drawing">
-    <value>244, 87</value>
-  </data>
-  <data name="eng_label.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="eng_label.Text" xml:space="preserve">
-    <value>label15</value>
-  </data>
-  <data name="&gt;&gt;eng_label.Name" xml:space="preserve">
-    <value>eng_label</value>
-  </data>
-  <data name="&gt;&gt;eng_label.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;eng_label.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;eng_label.ZOrder" xml:space="preserve">
-    <value>3</value>
   </data>
   <data name="kannada_label.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -292,7 +214,7 @@
     <value>NoControl</value>
   </data>
   <data name="kannada_label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>185, 28</value>
+    <value>213, 18</value>
   </data>
   <data name="kannada_label.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -316,57 +238,111 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;kannada_label.Parent" xml:space="preserve">
-    <value>panel2</value>
+    <value>ledDisplay_panel</value>
   </data>
   <data name="&gt;&gt;kannada_label.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="eng_label.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="eng_label.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 49.8000031pt</value>
+  </data>
+  <data name="eng_label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="eng_label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>213, 9</value>
+  </data>
+  <data name="eng_label.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="eng_label.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>150000000, 0</value>
+  </data>
+  <data name="eng_label.Size" type="System.Drawing.Size, System.Drawing">
+    <value>244, 87</value>
+  </data>
+  <data name="eng_label.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="eng_label.Text" xml:space="preserve">
+    <value>label15</value>
+  </data>
+  <data name="&gt;&gt;eng_label.Name" xml:space="preserve">
+    <value>eng_label</value>
+  </data>
+  <data name="&gt;&gt;eng_label.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;eng_label.Parent" xml:space="preserve">
+    <value>ledDisplay_panel</value>
+  </data>
+  <data name="&gt;&gt;eng_label.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="kannada_label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="kannada_label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 50.25pt</value>
+  </data>
+  <data name="kannada_label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="kannada_label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>202, 96</value>
+  </data>
+  <data name="kannada_label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="kannada_label1.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>150000000, 0</value>
+  </data>
+  <data name="kannada_label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>246, 88</value>
+  </data>
+  <data name="kannada_label1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="kannada_label1.Text" xml:space="preserve">
+    <value>label16</value>
+  </data>
+  <data name="&gt;&gt;kannada_label1.Name" xml:space="preserve">
+    <value>kannada_label1</value>
+  </data>
+  <data name="&gt;&gt;kannada_label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;kannada_label1.Parent" xml:space="preserve">
+    <value>ledDisplay_panel</value>
+  </data>
+  <data name="&gt;&gt;kannada_label1.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="customLedControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 10</value>
-  </data>
-  <data name="customLedControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>887, 180</value>
-  </data>
-  <data name="customLedControl1.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="customLedControl1.Text" xml:space="preserve">
-    <value>customLedControl1</value>
-  </data>
-  <data name="&gt;&gt;customLedControl1.Name" xml:space="preserve">
-    <value>customLedControl1</value>
-  </data>
-  <data name="&gt;&gt;customLedControl1.Type" xml:space="preserve">
-    <value>customLed.CustomLedControl, customLed, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;customLedControl1.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;customLedControl1.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="ledDisplay_panel.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="panel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="ledDisplay_panel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
-  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>887, 198</value>
+  <data name="ledDisplay_panel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>887, 186</value>
   </data>
-  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
+  <data name="ledDisplay_panel.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
   </data>
-  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
-    <value>panel2</value>
+  <data name="&gt;&gt;ledDisplay_panel.Name" xml:space="preserve">
+    <value>ledDisplay_panel</value>
   </data>
-  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
+  <data name="&gt;&gt;ledDisplay_panel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;ledDisplay_panel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;ledDisplay_panel.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
@@ -783,135 +759,6 @@
   <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;label4.Name" xml:space="preserve">
-    <value>label4</value>
-  </data>
-  <data name="&gt;&gt;label4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;clrButton.Name" xml:space="preserve">
-    <value>clrButton</value>
-  </data>
-  <data name="&gt;&gt;clrButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;clrButton.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;clrButton.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;fontType_label.Name" xml:space="preserve">
-    <value>fontType_label</value>
-  </data>
-  <data name="&gt;&gt;fontType_label.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;fontType_label.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;fontType_label.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;fontType_Combo.Name" xml:space="preserve">
-    <value>fontType_Combo</value>
-  </data>
-  <data name="&gt;&gt;fontType_Combo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;fontType_Combo.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;fontType_Combo.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
-  </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;lang_combo.Name" xml:space="preserve">
-    <value>lang_combo</value>
-  </data>
-  <data name="&gt;&gt;lang_combo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lang_combo.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;lang_combo.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;refresh.Name" xml:space="preserve">
-    <value>refresh</value>
-  </data>
-  <data name="&gt;&gt;refresh.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;refresh.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;refresh.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;text_size_numericUpDown.Name" xml:space="preserve">
-    <value>text_size_numericUpDown</value>
-  </data>
-  <data name="&gt;&gt;text_size_numericUpDown.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;text_size_numericUpDown.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;text_size_numericUpDown.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
-  </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 196</value>
-  </data>
-  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>887, 237</value>
-  </data>
-  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -1134,6 +981,27 @@
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 287</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>887, 146</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <metadata name="timer2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>104, 17</value>
   </metadata>
@@ -1147,7 +1015,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>886, 568</value>
+    <value>886, 431</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
